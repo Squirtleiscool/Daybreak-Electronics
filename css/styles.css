@@ -1,0 +1,336 @@
+@import "compass/css3";
+
+
+h1 {font-family: "Courier New", Times, serif;
+    font-size: 35px;
+    font-weight: bold;
+    color: Red;
+    /*margin: 6px 6px 6px 0px;*/
+    /*border-bottom: 1px solid black;*/
+    
+}
+
+h2 { 
+    font-weight: bold;
+    font-family: "Courier New", Times, serif;
+    font-size: 25px; 
+    color: orange; 
+    /*margin: 14px 6px 6px 0px;*/
+
+}
+
+h4 {
+    font-weight: bold;
+    text-align: center;
+    font-family: "Courier New", Times, serif;
+    color: black;
+}
+
+li {
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 17px;
+    
+}
+
+
+li a {
+  text-decoration: none;
+  color: black;
+  width: auto;
+ 
+  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+  transition: font-size 0.3s ease, background-color 0.3s ease;
+}
+
+li a:hover {
+  font-size: 25px;
+  background: #FFFFFF;
+}
+
+li:last-child {
+    border: none;
+}
+
+th, td { 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 13px;
+    
+    border: 1px solid #222222;
+    padding: 0px 0px;
+    text-align: center;
+
+}
+hr { 
+    color: #000000; 
+    width:70%; 
+    text-align:center;
+}
+
+a { 
+    color: #000000;
+}
+
+p {
+  font-family: Arial, Times, serif;
+  font-size: 16px;
+}
+
+
+/* ------------Michael Tu's created CSS----------------- */
+
+#my_account_menu_container li a span:nth-child(1):hover{
+    color: black;
+    /*padding: 0 10px 0 0;*/
+}
+
+.subcategory_container{
+    float: left; 
+    /*max-width: 25%; */
+    /*outline: 1px dashed black;*/
+    /*padding: 0 20px 0 0;*/
+    display: inline-block;
+}
+
+.subcategory_container ul{
+    padding: 0 20px 0 0;
+}
+
+.subcategory_container ul li{
+    list-style: none;
+    /*padding: 0 20px 0 0;*/
+}
+
+.products_container {
+    display: inline-block;
+}
+
+.products_container table {
+    border: 0;
+}
+
+/*.products_container table tr {*/
+/*    border-left: 1px solid black;*/
+/*}*/
+
+/*http://www.w3schools.com/cssref/sel_nth-child.asp*/
+.products_container table tr td:nth-child(2) {
+    /*padding: 0 0 0 150px;*/
+    width: 85%;
+    /*outline: 1px dashed black;*/
+}
+
+.products_container_1 table tr td:nth-child(2){
+    width: 100%;
+}
+
+.products_container table tr, 
+.products_container_1 table tr{
+    cursor: pointer;
+}
+
+.products_container table tr td img, 
+.products_container_1 table tr td img{
+    border: 1px solid black; 
+    width: 100px; 
+    height: 100px;
+}
+
+.products_container table tr td:nth-child(2) span, 
+.products_container_1 table tr td:nth-child(2) span{
+    color: #406bb3;
+    font-weight: bold;
+}
+
+
+/*----------------------Start Product Detail Styles---------------------------*/
+
+.product_img_detail_container img{
+    width: 350px; 
+    height: 350px; 
+    float: left;
+}
+
+.product_detail_container{
+    float: left; 
+    max-width: 500px;
+    padding-left: 20px;
+}
+
+.product_detail_container div p span{
+    font-weight: bold;
+}
+
+
+/*----------------------End Product Detail Styles-----------------------------*/
+
+.admin_operation_container {
+    max-width: 90%;
+    margin: 0 auto;
+    /*outline: 1px dashed black;*/
+}
+
+.login_form_container{
+    margin:0 auto; 
+    width:70%;
+}
+
+.random_display_container{
+    text-align: center;
+}
+
+.random_display_container img{
+    width: 290px; 
+    height: 250px;
+}
+
+/*-----------------Start Order List and Detail Styles-------------------------*/
+.order_list_container tr th, .order_detail_container tr th{
+    color: white;
+    background-color: black;
+}
+
+.order_list_container tr td{
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.order_list_container tr td:nth-child(6){
+    border: none;
+}
+
+.order_list_container tr td:nth-child(6) a{
+    padding: 5px 10px 5px 10px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.order_list_container tr td:nth-child(6) a:hover{
+    /*padding: 5px 10px 5px 10px;*/
+    background-color: #406bb3;
+    color: white;
+    /*border-radius: 5px;*/
+}
+
+.order_detail_container span, .order_detail_footer td:nth-child(3){
+    font-weight: bold;
+}
+
+.order_detail_footer td{
+    border:none;
+}
+
+.order_detail_footer td:nth-child(3){
+    padding: 20px 0 0 0;
+}
+/*-------------------End Order List and Detail Styles-------------------------*/
+
+.cart_container{
+    /*outline: 1px dashed black;*/
+}
+
+.cart_container tr{
+    /*outline: 1px dashed green;*/
+}
+
+.cart_container tr td{
+    /*outline: 1px dashed red;*/
+}
+
+.cart_container tr td:nth-child(1){
+    text-align: left;
+}
+
+.card_form_container, .checkout_form_container
+{
+    border: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.card_form_container tr td, .checkout_form_container tr td{
+    border: none;
+}
+
+.card_form_container tr td:nth-child(1), .checkout_form_container tr td:nth-child(1){
+    padding: 0 70px 0 0;
+}
+
+.card_form_container tr td:nth-child(2), .checkout_form_container tr td:nth-child(2){
+    text-align: left;
+}
+
+.card_form_container tr th, .checkout_form_container tr th
+{
+    background-color: #cccccc;
+}
+
+/*.cart_container tr td:nth-child(2){*/
+/*    text-align: center;*/
+/*}*/
+
+/* ------------Michael Tu's created CSS----------------- */
+/*Created this button at, http://css3buttongenerator.com/*/
+
+.btn {
+  background: #000000;
+  background-image: -webkit-linear-gradient(top, #000000, #4d5459);
+  background-image: -moz-linear-gradient(top, #000000, #4d5459);
+  background-image: -ms-linear-gradient(top, #000000, #4d5459);
+  background-image: -o-linear-gradient(top, #000000, #4d5459);
+  background-image: linear-gradient(to bottom, #000000, #4d5459);
+  -webkit-border-radius: 18;
+  -moz-border-radius: 18;
+  border-radius: 18px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 50px 10px 50px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #446db0;
+  background-image: -webkit-linear-gradient(top, #446db0, #65889e);
+  background-image: -moz-linear-gradient(top, #446db0, #65889e);
+  background-image: -ms-linear-gradient(top, #446db0, #65889e);
+  background-image: -o-linear-gradient(top, #446db0, #65889e);
+  background-image: linear-gradient(to bottom, #446db0, #65889e);
+  text-decoration: none;
+  color: white;
+}
+
+.btnContainer{
+    text-align:center;
+    /*padding: 0 0 20px 0;*/
+}
+
+/* ------------------------------------------------ */
+
+ul.a {
+    list-style-image: url('Sun.png');
+}
+
+/*
+tbody tr:nth-child(even) {
+  background: #f0f0f2;
+}
+td {
+  border-bottom: 1px solid #cecfd5;
+  border-right: 1px solid #cecfd5;
+}
+td:first-child {
+  border-left: 1px solid #cecfd5;
+}
+thead {
+  background: #395870;
+  color: #fff;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+*/
